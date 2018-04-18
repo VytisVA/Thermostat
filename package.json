@@ -1,0 +1,25 @@
+{
+  "name": "thermostat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VytisVA/Thermostat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VytisVA/Thermostat/issues"
+  },
+  "homepage": "https://github.com/VytisVA/Thermostat#readme",
+  "dependencies": {
+    "jslint": "^0.12.0"
+  }
+}
