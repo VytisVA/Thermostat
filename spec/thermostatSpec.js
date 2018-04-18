@@ -33,6 +33,28 @@ describe('Thermostat', function() {
       thermostat.down();
     }
     expect(thermostat.getCurrentTemperature()).toEqual(10);
+  });
+  
+//Power saving mode is on by default
+
+  it('has a power saving mode by default', function(){
+    expect(thermostat.isPowerSavingMode()).toBe(true);
+  });
+
+//Switch PSM off
+
+  it('can switch power saving mode off', function(){
+    thermostat.PSMoff();
+    expect(thermostat.isPowerSavingMode()).toBe(false);
+  });
+  
+// Switch PSM on
+
+  it('can switch power saving mode off', function(){
+    thermostat.PSMoff();
+    expect(thermostat.isPowerSavingMode()).toBe(false);
+    thermostat.PSMon();
+    expect(thermostat.isPowerSavingMode()).toBe(true);
   }); 
 });
 
