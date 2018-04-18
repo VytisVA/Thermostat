@@ -12,10 +12,11 @@ Thermostat.prototype.up = function() {
     return this.temperature += 1;
   };
 
-var thermostat = new Thermostat();
- 
-console.log(thermostat.temperature);
+Thermostat.prototype.down = function() {
+    return this.temperature -= 1;
+  };
+
 
 var thermostat = new Thermostat();
  
-console.log(thermostat.up());
+console.log(thermostat.down());

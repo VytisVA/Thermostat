@@ -16,8 +16,14 @@ describe('Thermostat', function() {
 
   //You can increase the temperature with an up function
 
-  it('increases in temperature with up()', function() {
+  it('increases temperature with up()', function() {
     expect(thermostat.up()).toEqual(21);
+  });
+
+//You can decrease the temperature with a down function
+
+  it('decreases temperature with down()', function() {
+    expect(thermostat.down()).toEqual(19);
   });
 });
 
