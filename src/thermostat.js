@@ -68,8 +68,14 @@ Thermostat.prototype.up = function() {
       return 'medium-usage';
     }
     return 'high-usage';
-  }; 
+  };
+
+function updateTemperature() {
+    $('#temperature').text(thermostat.temperature);
+  }  
+  
+var thermostat = new Thermostat();
+console.log(thermostat.up());
 
 var thermostat = new Thermostat();
- 
-console.log(thermostat.energyUsage());
+console.log(thermostat.down());
