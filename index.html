@@ -10,12 +10,13 @@
       <div id="div_title">TherMofo</div>
       <h1 id="temperature"></h1>
       <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
+        <button id="temperature-up" style="color:DodgerBlue;height:50px; width:50px">+</button>
+        <button id="temperature-down" style="color:DodgerBlue;height:50px; width:50px">-</button>
+        <button id="temperature-reset" style="color:DodgerBlue;height:50px; width:50px">reset</button>
         power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
+        <button id="powersaving-on" style="color:DodgerBlue;height:50px; width:50px">PSM on</button>
+        <button id="powersaving-off"style="color:DodgerBlue;height:50px; width:50px">PSM off</button><br>
+        <div id="div_title1">Random stuff to play around!</div>
       </p>
     </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,13 +32,19 @@
       $("#div_title").css("margin", "auto");
       $("#div_title").css("color", "red");
 
+      
+
       var thermostat = new Thermostat();
-      updateTemperature();
+      $('#temperature').text(thermostat.temperature);
+
+      $('#temperature').css("color", "red");
 
       $('#temperature-up').click(function() {
         thermostat.up();
         updateTemperature();
       });
+
+      $('#temperature-up').css("color", "lightred")
 
       $('#temperature-down').click(function() {
         thermostat.down();
