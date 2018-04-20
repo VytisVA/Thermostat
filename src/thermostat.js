@@ -66,10 +66,10 @@ Thermostat.prototype.energyUsage = function() {
     return 'high-usage';
   };
 
-function updateTemperature() {
-    $('#temperature').text(thermostat.temperature);
-    $('#temperature').attr('class', thermostat.energyUsage());
-  }  
+// function updateTemperature() {
+//     $('#temperature').text(thermostat.temperature);
+//     $('#temperature').attr('class', thermostat.energyUsage());
+//   }  
   
   
   

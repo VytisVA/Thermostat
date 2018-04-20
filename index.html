@@ -18,7 +18,7 @@
         power saving mode is <span id="power-saving-status">on</span>
         <button id="powersaving-on" >PSM on</button>
         <button id="powersaving-off">PSM off</button><br>
-        <!-- <div id="div_title1">Random stuff to play around!</div> -->
+        <div id="display"></div>
       </p>
     </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -64,6 +64,7 @@
 
       function updateTemperature() {
         $('#temperature').text(thermostat.temperature);
+        $('#temperature').attr('class', thermostat.energyUsage());
       };
     });
   
