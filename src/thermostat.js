@@ -56,11 +56,11 @@ Thermostat.prototype.up = function() {
     return this.temperature += 1;
   }
   
-  Thermostat.prototype.resetTemperature = function() {
+Thermostat.prototype.resetTemperature = function() {
     this.temperature = this.DEFAULT_TEMPERATURE;
   }
   
-  Thermostat.prototype.energyUsage = function() {
+Thermostat.prototype.energyUsage = function() {
     if (this.temperature < this.MEDIUM_ENERGY_USAGE_LIMIT) {
       return 'low-usage';
     }
@@ -72,10 +72,13 @@ Thermostat.prototype.up = function() {
 
 function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
+    $('#temperature').attr('class', thermostat.energyUsage());
   }  
   
-var thermostat = new Thermostat();
-console.log(thermostat.up());
+  
+  
+// var thermostat = new Thermostat();
+// console.log(thermostat.up());
 
-var thermostat = new Thermostat();
-console.log(thermostat.down());
+// var thermostat = new Thermostat();
+// console.log(thermostat.down());

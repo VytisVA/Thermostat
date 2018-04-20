@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <body style="background-color:lightblue;">
+  <body>
   <head>
     <title>Thermostat</title>
   </head>
   <body>
     <section>
+      <link rel="stylesheet" href="mystyle.css">
       <img src="https://nerdist.com/wp-content/uploads/2015/08/Cold-Weather-Movies-082215.jpg"; height="350" width="500">
       <div id="div_title">TherMofo</div>
       <h1 id="temperature"></h1>
@@ -28,16 +29,11 @@
 
     $(document).ready(function() {
 
-      $("#div_title").css("width", 1000);
-      $("#div_title").css("margin", "auto");
-      $("#div_title").css("color", "red");
-
-      
 
       var thermostat = new Thermostat();
       $('#temperature').text(thermostat.temperature);
 
-      $('#temperature').css("color", "red");
+      // $('#temperature').css("color", "red");
 
       $('#temperature-up').click(function() {
         thermostat.up();
