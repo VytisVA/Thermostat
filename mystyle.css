@@ -34,3 +34,17 @@ button {
     margin: auto;
     font-size: 1.9em;
 }
+
+#temp1 {
+    padding-left: 123px;
+    margin: auto;
+    color: rgb(21, 23, 146);
+    font-size: 1.3em;
+}
+
+#select-city {
+    padding-left: 145px;
+    margin: auto;
+    color: rgb(21, 23, 146);
+    font-size: 1.3em;
+}
