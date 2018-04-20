@@ -22,3 +22,15 @@ body {
     color: red;
     font-size: 1.2em;
 }
+
+button {
+    color: DodgerBlue;
+    height: 50px;
+    width: 50px;
+}
+
+#temperature {
+    padding-left: 225px;
+    margin: auto;
+    font-size: 1.9em;
+}
